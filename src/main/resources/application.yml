@@ -1,0 +1,15 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:willferguson/config.git
+          clone-on-start: true
+  security:
+    user:
+      name: admin
+      password: admin
